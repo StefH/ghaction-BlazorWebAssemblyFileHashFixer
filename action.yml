@@ -11,6 +11,6 @@ inputs:
     default: '.'
 runs:
   using: 'docker'
-  image: 'Dockerfile'
+  image: 'docker://sheyenrath/blazor-webassembly-filehash-fixer'
   args:
     - ${{ inputs.wwwroot-path }}
