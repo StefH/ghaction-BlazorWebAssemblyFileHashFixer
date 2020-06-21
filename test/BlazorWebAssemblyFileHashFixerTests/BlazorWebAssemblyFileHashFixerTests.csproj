@@ -15,6 +15,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\src\BlazorWebAssemblyFileHashFixer\BlazorWebAssemblyFileHashFixer.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Update="wwwroot\service-worker-assets.js">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>

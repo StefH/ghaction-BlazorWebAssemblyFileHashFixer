@@ -1,6 +1,6 @@
 using System.IO;
 using System.Reflection;
-using BlazorWebAssemblyFileHashFixer.Serializers;
+using BlazorWebAssemblyFileHashFixer;
 using FluentAssertions;
 using Xunit;
 
