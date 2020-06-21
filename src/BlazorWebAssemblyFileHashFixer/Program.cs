@@ -13,9 +13,14 @@ namespace BlazorWebAssemblyFileHashFixer
         private const string BlazorBootJson = "blazor.boot.json";
         private const string ServiceWorkAssetsJs = "service-worker-assets.js";
 
-
         static void Main(string[] args)
         {
+            if (args.Length == 0)
+            {
+                Console.WriteLine($"Please provide the wwwroot path.");
+                return;
+            }
+
             string path = args[0];
 
             string blazorBootPath = Path.Combine(path, "_framework", BlazorBootJson);
