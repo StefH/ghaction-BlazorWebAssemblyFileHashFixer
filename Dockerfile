@@ -3,4 +3,4 @@ COPY . .
 
 RUN chmod +x ./fixer
 
-ENTRYPOINT ["./fixer"]
+ENTRYPOINT ["/fixer"]
