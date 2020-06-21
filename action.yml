@@ -2,7 +2,7 @@
 description: 'GitHub Action to fix the sha256 file-hashes in "blazor.boot.json" and "service-worker-assets.js"'
 author: 'sheyenrath'
 branding:
-  icon: 'repeat'  
+  icon: 'hash'  
   color: 'purple'
 inputs:
   wwwroot-path:
