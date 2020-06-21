@@ -1,8 +1,7 @@
 ﻿using System.IO;
 using System.Text.Json;
-using BlazorWebAssemblyFileHashFixer.Models;
 
-namespace BlazorWebAssemblyFileHashFixer.Serializers
+namespace BlazorWebAssemblyFileHashFixer
 {
     public static class BlazorBootSerializer
     {

@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace BlazorWebAssemblyFileHashFixer.Models
+namespace BlazorWebAssemblyFileHashFixer
 {
     public class Resources
     {

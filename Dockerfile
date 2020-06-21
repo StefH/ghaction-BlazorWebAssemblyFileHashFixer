@@ -1,4 +1,6 @@
 FROM sheyenrath/blazor-webassembly-filehash-fixer
 COPY . .
 
-ENTRYPOINT ["/fixer"]
+RUN chmod +x ./fixer
+
+ENTRYPOINT ["./fixer"]

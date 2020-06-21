@@ -2,9 +2,6 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using BlazorWebAssemblyFileHashFixer.Models;
-using BlazorWebAssemblyFileHashFixer.Serializers;
-using BlazorWebAssemblyFileHashFixer.Utils;
 
 namespace BlazorWebAssemblyFileHashFixer
 {
