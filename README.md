@@ -13,7 +13,8 @@ GitHub Action to fix the sha256 file-hashes in:
 ## Example usage
 
 ``` yml
-uses: stefh/blazor-webassembly-filehash-fixer@v1
-with:
-  wwwroot-path: '.'
+- name: BlazorWebAssemblyFileHashFixer
+  uses: stefh/ghaction-BlazorWebAssemblyFileHashFixer@v1
+  with:
+    wwwroot-path: '.'
 ```
