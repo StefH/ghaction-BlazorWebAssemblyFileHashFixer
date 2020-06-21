@@ -1,4 +1,4 @@
 FROM sheyenrath/blazor-webassembly-filehash-fixer
-COPY fixer /fixer
+COPY . .
 
 ENTRYPOINT ["/fixer"]
