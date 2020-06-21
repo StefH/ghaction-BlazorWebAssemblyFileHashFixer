@@ -12,6 +12,8 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "action", "action", "{44683A00-C48E-48D7-B879-37BA4479C8C9}"
 	ProjectSection(SolutionItems) = preProject
 		action.yml = action.yml
+		create_how_to.md = create_how_to.md
+		Dockerfile = Dockerfile
 		entrypoint.sh = entrypoint.sh
 		README.md = README.md
 	EndProjectSection
