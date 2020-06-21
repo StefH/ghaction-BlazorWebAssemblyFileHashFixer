@@ -19,3 +19,6 @@ docker rmi $(docker images -f "dangling=true" -q)
 ``` cmd
 docker push sheyenrath/blazor-webassembly-filehash-fixer
 ```
+
+
+ dotnet publish -c Release -r linux-x64 -o ../../out --self-contained true -p:PublishSingleFile=true -p:PublishTrimmed=true
