@@ -30,4 +30,4 @@ COPY ./out/fixer fixer
 RUN chmod +x ./fixer
 
 # Code file to execute when the docker container starts up (`entrypoint.sh`)
-ENTRYPOINT ["./fixer"]
+ENTRYPOINT ["/fixer"]
