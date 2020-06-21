@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30128.74
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{BE4246B4-1850-4C65-B45A-E1438918D21F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{C88A09DC-1CCF-4752-82DA-B39FA77BD2DD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorWebAssemblyFileHashFixer", "src\BlazorWebAssemblyFileHashFixer\BlazorWebAssemblyFileHashFixer.csproj", "{78A8898D-D725-45DA-80F9-6FA16EBF1EB9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorWebAssemblyFileHashFixerTests", "test\BlazorWebAssemblyFileHashFixerTests\BlazorWebAssemblyFileHashFixerTests.csproj", "{C37A20E1-7ABD-4F5C-9BCA-6160B6D448AF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "action", "action", "{44683A00-C48E-48D7-B879-37BA4479C8C9}"
+	ProjectSection(SolutionItems) = preProject
+		action.yml = action.yml
+		entrypoint.sh = entrypoint.sh
+		README.md = README.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{78A8898D-D725-45DA-80F9-6FA16EBF1EB9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78A8898D-D725-45DA-80F9-6FA16EBF1EB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78A8898D-D725-45DA-80F9-6FA16EBF1EB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78A8898D-D725-45DA-80F9-6FA16EBF1EB9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C37A20E1-7ABD-4F5C-9BCA-6160B6D448AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C37A20E1-7ABD-4F5C-9BCA-6160B6D448AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C37A20E1-7ABD-4F5C-9BCA-6160B6D448AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C37A20E1-7ABD-4F5C-9BCA-6160B6D448AF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{78A8898D-D725-45DA-80F9-6FA16EBF1EB9} = {BE4246B4-1850-4C65-B45A-E1438918D21F}
+		{C37A20E1-7ABD-4F5C-9BCA-6160B6D448AF} = {C88A09DC-1CCF-4752-82DA-B39FA77BD2DD}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5AC579CD-75A3-4753-A175-6F8AB41795D3}
+	EndGlobalSection
+EndGlobal

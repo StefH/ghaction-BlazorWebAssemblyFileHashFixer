@@ -1,0 +1,11 @@
+{
+  "profiles": {
+    "BlazorWebAssemblyFileHashFixer": {
+      "commandName": "Project",
+      "commandLineArgs": "C:\\publish\\wwwroot"
+    },
+    "Docker": {
+      "commandName": "Docker"
+    }
+  }
+}

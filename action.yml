@@ -1,0 +1,16 @@
+﻿name: 'blazor-webassembly-filehash-fixer'
+description: 'GitHub Action to fix the sha256 file-hashes in "blazor.boot.json" and "service-worker-assets.js"'
+author: 'sheyenrath'
+branding:
+  icon: 'repeat'  
+  color: 'purple'
+inputs:
+  wwwroot-path:
+    description: 'wwwroot path'
+    required: true
+    default: '.'
+runs:
+  using: 'docker'
+  image: 'src/BlazorWebAssemblyFileHashFixer/Dockerfile'
+  args:
+    - ${{ inputs.wwwroot-path }}
