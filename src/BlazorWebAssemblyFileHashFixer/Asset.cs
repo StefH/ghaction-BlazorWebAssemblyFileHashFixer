@@ -1,4 +1,4 @@
-﻿namespace BlazorWebAssemblyFileHashFixer.Models
+﻿namespace BlazorWebAssemblyFileHashFixer
 {
     public class Asset
     {

@@ -1,6 +1,4 @@
-﻿using System.Runtime.Serialization;
-
-namespace BlazorWebAssemblyFileHashFixer.Models
+﻿namespace BlazorWebAssemblyFileHashFixer
 {
     public class BlazorBoot
     {
