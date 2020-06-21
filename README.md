@@ -33,5 +33,5 @@ Use this GitHub Action to fix the SHA56 hashes from in the blazor.boot.json and 
 - name: BlazorWebAssemblyFileHashFixer
   uses: stefh/ghaction-BlazorWebAssemblyFileHashFixer@v1
   with:
-    wwwroot-path: '.'
+    wwwroot-path: ${{ env.PUBLISH_DIR }}
 ```
