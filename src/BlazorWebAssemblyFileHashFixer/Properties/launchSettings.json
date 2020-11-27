@@ -1,7 +1,8 @@
 {
   "profiles": {
     "BlazorWebAssemblyFileHashFixer": {
-      "commandName": "Project"
+      "commandName": "Project",
+      "commandLineArgs": "C:\\Users\\azurestef\\Documents\\Github\\CoronaDashboard\\src\\CoronaDashboard\\bin\\Release\\net5.0\\publish\\wwwroot"
     },
     "Docker": {
       "commandName": "Docker"
