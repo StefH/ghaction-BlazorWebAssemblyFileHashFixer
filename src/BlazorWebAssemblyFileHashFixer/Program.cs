@@ -7,6 +7,10 @@ namespace BlazorWebAssemblyFileHashFixer
 {
     class Program
     {
+        // These subfolders do not exists anymore for .NET 5.0
+        private const string SubFolderBin = "_bin";
+        private const string SubFolderWasm = "wasm";
+
         private const string BlazorBootJson = "blazor.boot.json";
         private const string ServiceWorkAssetsJs = "service-worker-assets.js";
 
@@ -23,17 +27,20 @@ namespace BlazorWebAssemblyFileHashFixer
             string blazorBootPath = Path.Combine(path, "_framework", BlazorBootJson);
             if (File.Exists(blazorBootPath))
             {
+                string subFolderBin = Directory.Exists(SubFolderBin) ? SubFolderBin : string.Empty;
+                string subFolderWasm = Directory.Exists(SubFolderWasm) ? SubFolderWasm : string.Empty;
+
                 var blazorBootAssets = new List<Asset>();
                 var blazorBoot = BlazorBootSerializer.DeserializeFromFile(blazorBootPath);
                 blazorBootAssets.AddRange(blazorBoot.Resources.Assembly.Select(x => new Asset
                 {
                     Hash = x.Value,
-                    Path = Path.Combine(path, "_framework", "_bin", x.Key)
+                    Path = Path.Combine(path, "_framework", subFolderBin, x.Key)
                 }));
                 blazorBootAssets.AddRange(blazorBoot.Resources.Runtime.Select(x => new Asset
                 {
                     Hash = x.Value,
-                    Path = Path.Combine(path, "_framework", "wasm", x.Key)
+                    Path = Path.Combine(path, "_framework", subFolderWasm, x.Key)
                 }));
 
                 int replaced = 0;

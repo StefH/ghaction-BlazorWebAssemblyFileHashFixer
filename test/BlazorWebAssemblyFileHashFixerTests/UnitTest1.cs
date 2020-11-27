@@ -18,6 +18,7 @@ namespace BlazorWebAssemblyFileHashFixerTests
             var result = BlazorBootSerializer.DeserializeFromFile(path);
 
             result.Should().NotBeNull();
+            result.Resources.Assembly.Should().NotBeEmpty();
         }
 
         [Fact]
@@ -28,6 +29,7 @@ namespace BlazorWebAssemblyFileHashFixerTests
             var result = ServiceWorkerAssetsSerializer.DeserializeFromFile(path);
 
             result.Should().NotBeNull();
+            result.Assets.Should().NotBeEmpty();
         }
     }
 }

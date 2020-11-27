@@ -7,7 +7,8 @@ namespace BlazorWebAssemblyFileHashFixer
     {
         private static readonly JsonSerializerOptions Options = new JsonSerializerOptions
         {
-            PropertyNamingPolicy = JsonNamingPolicy.CamelCase
+            PropertyNamingPolicy = JsonNamingPolicy.CamelCase,
+            PropertyNameCaseInsensitive = true
         };
 
         public static BlazorBoot DeserializeFromFile(string path)
