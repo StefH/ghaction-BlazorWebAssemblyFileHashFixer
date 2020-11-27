@@ -1,5 +1,5 @@
 name: 'ghaction-BlazorWebAssemblyFileHashFixer'
-description: 'GitHub Action to fix the sha256 file-hashes in "blazor.boot.json" and "service-worker-assets.js".'
+description: 'GitHub Action to fix the sha256 file-hashes from the resources defined in "blazor.boot.json" and "service-worker-assets.js".'
 author: 'sheyenrath'
 branding:
   icon: 'hash'  
@@ -11,6 +11,6 @@ inputs:
     default: '.'
 runs:
   using: 'docker'
-  image: 'docker://sheyenrath/blazor-webassembly-filehash-fixer'
+  image: 'docker://sheyenrath/blazor-webassembly-filehash-fixer:2'
   args:
     - ${{ inputs.wwwroot-path }}
