@@ -14,7 +14,13 @@ docker build -t sheyenrath/blazor-webassembly-filehash-fixer .
 docker rmi $(docker images -f "dangling=true" -q)
 ```
 
-### 3. Push
+### 3. Tag
+
+``` cmd
+docker tag sheyenrath/blazor-webassembly-filehash-fixer:latest sheyenrath/blazor-webassembly-filehash-fixer:2
+```
+
+### 4. Push
 
 ``` cmd
 docker push sheyenrath/blazor-webassembly-filehash-fixer
