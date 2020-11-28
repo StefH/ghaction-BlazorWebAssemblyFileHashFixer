@@ -5,6 +5,7 @@
 ### 1. Build
 
 ``` cmd
+cd src\BlazorWebAssemblyFileHashFixer
 docker build -t sheyenrath/blazor-webassembly-filehash-fixer .
 ```
 
@@ -23,7 +24,8 @@ docker tag sheyenrath/blazor-webassembly-filehash-fixer:latest sheyenrath/blazor
 ### 4. Push
 
 ``` cmd
-docker push sheyenrath/blazor-webassembly-filehash-fixer
+docker push sheyenrath/blazor-webassembly-filehash-fixer:latest
+docker push sheyenrath/blazor-webassembly-filehash-fixer:2
 ```
 
 
